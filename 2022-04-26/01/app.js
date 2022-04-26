@@ -19,3 +19,8 @@ function stringClean(s) {
         .map((x) => (x === "customdelim" ? " " : x))
         .join("");
 }
+
+// There is a replace method for strings. Combined with regex, the one-liner below does the same as my mulitline code 😂
+function stringClean2(s) {
+    return s.replace(/\d/g, "");
+}
