@@ -24,3 +24,8 @@ function stringClean(s) {
 function stringClean2(s) {
     return s.replace(/\d/g, "");
 }
+
+// Another one
+function stringClean3(s) {
+    return s.replace(/[0-9]/g, "");
+}
