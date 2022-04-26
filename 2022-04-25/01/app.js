@@ -12,3 +12,8 @@ function binToDec(bin) {
         .reverse()
         .reduce((acc, element, index) => acc + element * 2 ** index, 0);
 }
+
+// Binary to decimal
+function binToDec(bin) {
+    return parseInt(bin, 2); // parseInt(variable, base) does the exact same thing in one line. Phew!
+}
