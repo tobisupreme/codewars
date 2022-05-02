@@ -15,7 +15,6 @@ function mergeArrays(arr1, arr2) {
     // sort the array in ascending order
     arr = arr.sort((a, b) => a - b);
     // check and remove duplicates
-    let j;
     for (let i = 1; i < arr.length; i++) {
         if (arr[i - 1] === arr[i]) {
             arr.splice(i, 1);
