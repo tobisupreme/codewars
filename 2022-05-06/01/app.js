@@ -5,3 +5,7 @@
 function sumMix(x) {
     return x.reduce((acc, e) => (acc += +e), 0);
 }
+
+function sumMix2(x) {
+    return x.reduce((acc, e) => (acc += parseInt(e)), 0);
+}
