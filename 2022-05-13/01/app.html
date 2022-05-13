@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Code Wars | 8kyu</title>
+
+    <style>
+        html {
+            font-size: 100%;
+        }
+        .kata-title {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+        .kata-title h1 {
+            font-size: 1.4rem;
+            font-weight: 500;
+        }
+        .kata-title span {
+            display: inline-block;
+            padding: .5rem;
+            border: .0625rem red solid;
+            border-radius: 90rem;
+        }
+        .block-code,
+        .inline-code {
+            font-family: monospace;
+            background-color: rgba(128, 128, 128, 0.1);
+        }
+        .inline-code {
+            display: inline-block;
+            padding: .125rem;
+        }
+        .block-code {
+            display: block;
+            max-width: 20%;
+            padding: .625rem;
+            border-radius: .3125rem;
+        }
+    </style>
+  </head>
+  <body>
+    <p>Click <a href="https://www.codewars.com/kata/55ecd718f46fba02e5000029"> here</a> for the link to this kata.</p>
+
+    <header class="kata-title">
+        <span>8 kyu</span>
+        <h1>What is between?</h1>
+    </header>
+    <p>Complete the function that takes two integers (<span class="inline-code">a, b,</span> where <span class="inline-code">a &larr; b</span>) and return an array of all integers between the input parameters, including them.</p>
+
+    <p>For example:</p>
+    <code class="block-code"> 
+        a = 1; <br/>
+        b = 4; <br/>
+        --> [1, 2, 3, 4] 
+    </code>
+    <script>
+        function between(a, b) {
+            let arr = [];
+            for (let i = a; i <= b; i++) {
+                arr.push(i);
+            }
+            return arr;
+        }
+    </script>
+  </body>
+</html>
