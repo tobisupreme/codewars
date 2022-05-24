@@ -4,32 +4,17 @@
 // subtract 6 from the number until the final answer is between 1 and 6
 // return matching result
 
+// phrase store
+const lovePhrase = {
+  0: "not at all",
+  1: "I love you",
+  2: "a little",
+  3: "a lot",
+  4: "passionately",
+  5: "madly",
+};
+
+// reduce number to last 6 and return appropriate phrasing
 function howMuchILoveYou(nbPetals) {
-  if (isNaN(nbPetals) == true || nbPetals < 1) {
-    return "You are not on the scale";
-  } else if (nbPetals == 1) {
-    return "I love you";
-  } else if (nbPetals == 2) {
-    return "a little";
-  } else if (nbPetals == 3) {
-    return "a lot";
-  } else if (nbPetals == 4) {
-    return "passionately";
-  } else if (nbPetals == 5) {
-    return "madly";
-  } else if (nbPetals == 6) {
-    return "not at all";
-  } else {
-    return howMuchILoveYou(nbPetals - 6);
-  }
+  return lovePhrase[nbPetals % 6];
 }
-
-let try7, try3, try6;
-
-try7 = howMuchILoveYou(7);
-try3 = howMuchILoveYou(3);
-try6 = howMuchILoveYou(6);
-
-console.log(try7);
-console.log(try3);
-console.log(try6);
