@@ -6,6 +6,7 @@ function cakes(recipe, available) {
   for (ingredient in recipe) {
     // check that all keys in recipe are present in available, else return 0
     if (!available[ingredient]) return 0;
+    
     // find how many times we can make the recipe with available ingredients
     count.push(Math.floor(available[ingredient] / recipe[ingredient]));
   }
