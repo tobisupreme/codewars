@@ -9,7 +9,6 @@
 // }
 
 function makeNegative(num) {
-    (num > 0) ? num *= -1 : num;
-    return num
-  }
-  
+  num > 0 ? (num *= -1) : num;
+  return num;
+}
