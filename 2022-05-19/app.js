@@ -19,24 +19,26 @@ Pseudocode
 03. Loop through array and return the sum of differences
 */
 
-let arr = [7, 45, 32, 5, 34, 31, 5]
+let arr = [7, 45, 32, 5, 34, 31, 5];
 
 function sumDiffArr(arr) {
-    // If array is empty or it's length is 1, return 0
-    if (arr.length < 2) {
-        return 0
-    }
+  // If array is empty or it's length is 1, return 0
+  if (arr.length < 2) {
+    return 0;
+  }
 
-    // Sort array in descending order
-    let sorted = arr.sort((a, b) => b - a);
+  // Sort array in descending order
+  let sorted = arr.sort((a, b) => b - a);
 
-    // Loop through array and return the sum of differences
-    let acc = 0;
-    for (let i = 1; i < sorted.length; i ++) {
-        acc += sorted[i - 1] - sorted[i];
-    }
+  // Loop through array and return the sum of differences
+  let acc = 0;
+  for (let i = 1; i < sorted.length; i++) {
+    acc += sorted[i - 1] - sorted[i];
+  }
 
-    return acc;
+  return acc;
 }
+
+// Tests
 console.log(sumDiffArr(arr));
 console.log(sumDiffArr([1, 2, 10]));
