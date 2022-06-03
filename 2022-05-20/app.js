@@ -16,7 +16,7 @@
 // 0 <= x <= 4
 // 0 <= y <= 4
 
-// solved using reduce() 
+// solved using reduce()
 function points(games) {
   return games.reduce((acc, element) => {
     let [x, a, y] = element;
@@ -29,7 +29,7 @@ function points(games) {
     } else {
       acc += 0;
     }
-    return acc
+    return acc;
   }, 0);
 }
 
@@ -50,3 +50,5 @@ function points2(games) {
   }
   return acc;
 }
+
+//
