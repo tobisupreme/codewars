@@ -10,5 +10,11 @@ function fakeBin(x) {
   return bin;
 }
 
+function fakeBin2(x) {
+  return Array.from(x).map((x) => (x < 5 ? 0 : 1)).join("");
+}
+
+
 // Test cases
 console.log(fakeBin("45385593107843568"));
+console.log(fakeBin2("45385593107843568"));
