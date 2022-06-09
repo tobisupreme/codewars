@@ -20,7 +20,7 @@ function buyTofu(cost, box) {
   if (!("monme" in obj)) {
     obj["monme"] = 0;
   }
-  
+
   for (key in obj) {
     result.push(obj[key]);
   }
@@ -73,6 +73,7 @@ function minCoins(cost, obj) {
   } else return count;
 }
 
+// Test cases
 console.log(buyTofu(124, "mon mon mon mon mon apple mon mon mon mon mon mon mon monme mon mon monme mon mon mon mon cloth monme mon mon mon mon mon mon mon mon cloth mon mon monme mon mon mon mon monme mon mon mon mon mon mon mon mon mon mon mon mon mon"));
 console.log(buyTofu(674, "mon mon mon"));
 console.log(buyTofu(124, "mon mon mon mon mon apple mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon monme mon mon mon mon cloth mon mon mon mon mon mon mon mon mon cloth mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon"));
@@ -80,6 +81,3 @@ console.log(buyTofu(124, "mon mon mon mon mon apple mon mon mon mon mon mon mon 
 let cost1 = 124;
 let box1 = "mon mon mon mon mon apple mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon monme mon mon mon mon cloth mon mon mon mon mon mon mon mon mon cloth mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon";
 console.log(buyTofu(cost1, box1));
-/* console.log(buyTofu(one))
-console.log(buyTofu(two))
-console.log(buyTofu(three)) */
