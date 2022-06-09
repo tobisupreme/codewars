@@ -1,4 +1,4 @@
-function stairsIn20(s) {
+function stairsIn20Years(s) {
   let weeklySums = [];
   for (const week of s) {
     weeklySums.push(week.reduce((acc, steps) => (acc += steps), 0));
@@ -24,5 +24,5 @@ let two = [
   [4, 6, 3, 2, 2],
   [4, 6, 34, 6, 7],
 ];
-console.log(stairsIn20(two));
-console.log(stairsIn20(one));
+console.log(stairsIn20Years(two));
+console.log(stairsIn20Years(one));
