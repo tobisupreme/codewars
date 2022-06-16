@@ -16,8 +16,3 @@ highAndLow("1 9 3 4 -5"); // return "9 -5"
 All numbers are valid `Int32`, no need to validate them.
 There will always be at least one number in the input string.
 Output string must be two numbers separated by a single space, and highest number is first.
-```
-n = 0  ==> [1]        # [2^0]
-n = 1  ==> [1, 2]     # [2^0, 2^1]
-n = 2  ==> [1, 2, 4]  # [2^0, 2^1, 2^2]
-```

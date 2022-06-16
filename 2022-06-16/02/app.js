@@ -1,5 +1,8 @@
-function highAndLow(numbers){
-  // ...
+function highAndLow(numbers) {
+  let numArray = numbers.split(" ").map(Number);
+  let max = Math.max.apply(null, numArray);
+  let min = Math.min.apply(null, numArray);
+  return `${max.toString()} ${min.toString()}`;
 }
 
 // Test cases
