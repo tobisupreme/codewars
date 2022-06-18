@@ -1,5 +1,9 @@
-function repeatStr (n, s) {
-  return '';
+function repeatStr(n, s) {
+  let result = "";
+  for (i = 0; i < n; i++) {
+    result += s;
+  }
+  return result;
 }
 
 // Test cases
