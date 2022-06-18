@@ -1,4 +1,13 @@
 function firstNonRepeated(s) {
+  for (let i = 0; i < s.length; i++) {
+    if (s.indexOf(s[i]) === s.lastIndexOf(s[i])) {
+      return s[i];
+    }
+  }
+  return null;
+}
+
+function firstNonRepeated2(s) {
   let store = {};
 
   // Loop over the string and add elements along with the number of occurences to store
