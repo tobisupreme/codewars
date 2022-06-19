@@ -23,14 +23,36 @@ Pseudocode:
 */
 
 function findOdd(A) {
-  
-  return 0;
+  let oddCount;
+
+  // Count instances of each element
+  let elementCount = A.reduce((obj, element) => {
+    if (!obj[element]) {
+      obj[element] = 0;
+    }
+    obj[element]++;
+    return obj;
+  }, {});
+
+  // Check for odd values
+  let countValues = Object.values(elementCount);
+  countValues.forEach(element => {
+    if (element % 2 != 0) {
+      oddCount = element;
+    }
+  })
+
+  // return element with odd number of counts
+  for (element in elementCount) {
+    if (elementCount[element] === oddCount)
+    return Number(element)
+  }
 }
 
 // Test cases
-console.log(findOdd([20, 1, -1, 2, -2, 3, 3, 5, 5, 1, 2, 4, 20, 4, -1, -2, 5])) // 5
-console.log(findOdd([1, 1, 2, -2, 5, 2, 4, 4, -1, -2, 5])) // -1
-console.log(findOdd([20, 1, 1, 2, 2, 3, 3, 5, 5, 4, 20, 4, 5])) // 5
-console.log(findOdd([10])) // 10
-console.log(findOdd([1, 1, 1, 1, 1, 1, 10, 1, 1, 1, 1])) // 10
-console.log(findOdd([5, 4, 3, 2, 1, 5, 4, 3, 2, 10, 10])) // 1
+console.log(findOdd([20, 1, -1, 2, -2, 3, 3, 5, 5, 1, 2, 4, 20, 4, -1, -2, 5])); // 5
+console.log(findOdd([1, 1, 2, -2, 5, 2, 4, 4, -1, -2, 5])); // -1
+console.log(findOdd([20, 1, 1, 2, 2, 3, 3, 5, 5, 4, 20, 4, 5])); // 5
+console.log(findOdd([10])); // 10
+console.log(findOdd([1, 1, 1, 1, 1, 1, 10, 1, 1, 1, 1])); // 10
+console.log(findOdd([5, 4, 3, 2, 1, 5, 4, 3, 2, 10, 10])); // 1
