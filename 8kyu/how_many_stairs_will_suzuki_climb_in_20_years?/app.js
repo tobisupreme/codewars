@@ -1,3 +1,29 @@
+/*
+PREP:
+Parameters:
+This function takes in an array
+
+Returns:
+This function returns a number
+
+Example:
+input of [
+  [2, 3, 4, 5, 6],
+  [4, 6, 3, 2, 2],
+  [4, 6, 34, 6, 7],
+] should return 1880
+
+Pseudocode:
+// Function takes in a nested array
+  // Initialise an array (weeklySum) to hold the sum of steps climbed weekly
+  // Iterate through the array
+    // Sum all values of the nested array
+    // Add to weeklySum array
+  // Get oneYearEstimate by summing elements of weeklySum
+  // Get 20 year estimate by multiplying oneYearEstimate by 20
+  // Return 20 year estimate
+*/
+
 function stairsIn20Years(s) {
   let weeklySums = [];
   for (const week of s) {
