@@ -10,11 +10,3 @@ If all the characters are unique, return the first character of the string.
 If there is no unique character, return null in JS or Java, and None in Python.
 
 You can assume, that the input string has always non-zero length.
-
-### Example
-```
-firstNonRepeated("test") // returns "e"
-firstNonRepeated("teeter") // returns "r"
-firstNonRepeated("trend") // returns "t" (all the characters are unique)
-firstNonRepeated("aabbcc") // returns null (all the characters are repeated)
-```
