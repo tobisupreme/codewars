@@ -1,3 +1,27 @@
+/*
+Solution 2:
+PREP:
+Parameters:
+This function takes in an integer and a space-separated string
+
+Returns:
+This function returns an array or a string
+
+Examples:
+input of (674, "mon mon mon") returns "leaving the market"
+input of (124, "mon mon mon mon mon apple mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon monme mon mon mon mon cloth mon mon mon mon mon mon mon mon mon cloth mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon") returns [ 121, 1, 181, 65 ]
+
+Pseudocode:
+// This function takes in an integer and a space-separated string
+  // count instances of mon
+  // count instances of monme
+  // sum all coins
+  // get num of monme coins needed
+  // get num of mon coins needed
+  // check if balance is adequate
+  // return [mon, monme, sumOfCoins, monNeeded + monmeNeeded];
+*/
+
 function buyTofu(cost, box) {
   // count instances of mon
   const mon = box.split(" ").filter((x) => x.toLowerCase() === "mon").length;

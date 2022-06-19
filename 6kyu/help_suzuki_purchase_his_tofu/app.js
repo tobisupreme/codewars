@@ -1,3 +1,25 @@
+/*
+PREP:
+Parameters:
+This function takes in an integer and a space-separated string
+
+Returns:
+This function returns an array or a string
+
+Examples:
+input of (674, "mon mon mon") returns "leaving the market"
+input of (124, "mon mon mon mon mon apple mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon monme mon mon mon mon cloth mon mon mon mon mon mon mon mon mon cloth mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon mon") returns [ 121, 1, 181, 65 ]
+
+Pseudocode:
+// This function takes in an integer and a space-separated string
+  // Filter box (string) for coins
+  // Count coins in box
+  // Set values for coins "mon" and "monme" to 0 if they don't exist
+  // Calculate value of coins in box
+  // Calculate min number of coins needed for Tofu
+  // Return result
+*/
+
 function buyTofu(cost, box) {
   let result = [];
 
