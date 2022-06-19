@@ -1,3 +1,41 @@
+/*
+PREP:
+Parameters:
+This function takes in a string
+
+Returns:
+This function returns a nested array
+
+Examples:
+input of "potato tofu cucumber cabbage turnip pepper onion carrot celery mushroom potato tofu cucumber cabbage" returns 
+[
+  [2, "tofu"],
+  [2, "potato"],
+  [2, "cucumber"],
+  [2, "cabbage"],
+  [1, "turnip"],
+  [1, "pepper"],
+  [1, "onion"],
+  [1, "mushroom"],
+  [1, "celery"],
+  [1, "carrot"],
+];
+
+Pseudocode:
+// Function takes in a string
+  // Create an array with valid vegetables
+  // Split string into an array
+  // Remove non-vegetables from array
+  // Create object to store vegetable count
+  // Iterate through array and count instances of vegetables. Store in object
+  // Initialise empty array for final return
+  // Iterate through vegetable-count object
+    // Parse key-value pairs as array
+    // Push into final array
+  // Sort final array in descending order
+  // Return final array
+*/
+
 // valid vegetables
 const filter = ["cabbage", "carrot", "celery", "cucumber", "mushroom", "onion", "pepper", "potato", "tofu", "turnip"];
 
@@ -20,7 +58,7 @@ function countVegetables(string) {
   }, {});
 
   let array = obj2Arr(arrCount);
-  let arraySorted = sortArrDesc(array)
+  let arraySorted = sortArrDesc(array);
   return arraySorted;
 }
 
