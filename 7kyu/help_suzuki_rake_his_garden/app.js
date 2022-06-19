@@ -1,5 +1,27 @@
+/*
+PREP:
+Parameters:
+This function takes in a string
+
+Returns:
+This function returns a string
+
+Examples:
+input of 
+'slug spider rock gravel gravel gravel gravel gravel gravel gravel' returns 
+'gravel gravel rock gravel gravel gravel gravel gravel gravel gravel'
+
+Pseudocode:
+// Function takes in a string
+  // Split string into array
+  // Iterate through array
+    // If element is not rock and element is not gravel, replace element with gravel
+  // Join elements of array and convert to string
+  // Return string
+*/
+
 function rakeGarden(garden) {
-  var rakedGarden = garden.split(" ").map((inGarden) => {
+  let rakedGarden = garden.split(" ").map((inGarden) => {
     if (inGarden.toLowerCase() != "rock" && inGarden.toLowerCase() != "gravel") {
       return "gravel";
     } else {
