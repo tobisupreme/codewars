@@ -4,8 +4,6 @@ View [this kata](https://www.codewars.com/kata/5902bc7aba39542b4a00003d) on [Cod
 
 ---
 
-<!-- ### Instructions -->
-
 ## Story
 
 A freak power outage at the zoo has caused all of the electric cage doors to malfunction and swing open...
