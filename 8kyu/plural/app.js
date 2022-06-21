@@ -4,8 +4,20 @@
 
 // All values will be positive integers or floats, or zero.
 
+/* PREP:
+Parameters:
+This function takes in a number
+
+Returns:
+This function returns a boolean
+
+Pseudocode:
+// If number is greater than or equal to zero and not equal to 1, return true
+// Else return false
+*/
+
 function plural(n) {
-    if (n === 0 || n < 1 || n > 1) {
+    if (n >= 0 && n != 1) {
         return true;
     } else return false;
 }
