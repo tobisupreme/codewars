@@ -16,13 +16,19 @@ Pseudocode:
   // Split string into array for mutability
   // Iterate through elements of array
     // If current element is 9 and elements to the left and right are 7
-      // remove current element, start loop from begining
+      // remove current element
   // Convert array to string
   // Return string
 */
 
 function sevenAte9(str) {
-  // Code here
+  let strArr = str.split("");
+  for (let i = 0; i < str.length; i++) {
+    if (strArr[i] === "9" && strArr[i - 1] === "7" && strArr[i + 1] === "7") {
+      strArr.splice(i, 1);
+    }
+  }
+  return strArr.join("");
 }
 
 // Test cases
