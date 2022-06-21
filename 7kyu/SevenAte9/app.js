@@ -22,5 +22,14 @@ Pseudocode:
 */
 
 function sevenAte9(str) {
-  
+  // Code here
 }
+
+// Test cases
+let test1 = sevenAte9("797");
+let test2 = sevenAte9("7979797");
+let test3 = sevenAte9("165561786121789797");
+
+console.log(test1);
+console.log(test2);
+console.log(test3);
