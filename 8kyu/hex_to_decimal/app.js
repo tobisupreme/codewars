@@ -24,7 +24,40 @@ Pseudocode:
 */
 
 function hexToDec(hexString) {
-  //your code here
+  let hexDigits = {
+    a: 10,
+    b: 11,
+    c: 12,
+    d: 13,
+    e: 14,
+    f: 15,
+  };
+  let isNegative = false;
+  if (hexString.startsWith("-")) {
+    hexString = hexString.slice(1);
+    isNegative = true;
+  }
+  let hexStringSplit = hexString
+    .split("")
+    .reverse()
+    .map((digit) => {
+      if (hexDigits[digit.toLowerCase()]) {
+        return hexDigits[digit.toLowerCase()];
+      } else return Number(digit);
+    });
+  let decimalNum = hexStringSplit.reduce((acc, digit, index) => {
+    return (acc += digit * 16 ** index);
+  }, 0);
+
+  if (isNegative) {
+    decimalNum = decimalNum * -1;
+  }
+  return decimalNum;
+}
+
+// Using built-in JS methods
+function hexToDec2(hexString) {
+  return parseInt(hexString, 16);
 }
 
 // Test cases
