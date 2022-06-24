@@ -1,0 +1,3 @@
+function getDivisorsCnt(n) {
+  // todo
+}
