@@ -19,5 +19,17 @@ Pseudocode:
 */
 
 function getDivisorsCnt(n) {
-  // todo
+  let count = 0;
+  for (let i = 1; i <= n; i++) {
+    if (n % i === 0) {
+      count++;
+    }
+  }
+  return count;
 }
+
+// Test cases
+getDivisorsCnt(1); // 1
+getDivisorsCnt(10); // 4
+getDivisorsCnt(11); // 2
+getDivisorsCnt(54); // 8
