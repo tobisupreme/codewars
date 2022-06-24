@@ -7,8 +7,10 @@
     This function returns an array of numbers
 
 // Example:
-    Input of 348597 returns [7,9,5,8,4,3]
-
+    input of 1 returns [1,15,15]
+    input of 2 returns [2,24,24]
+    input of 10 returns [10,56,64]
+ 
 // Pseudocode:
     for i = 1 through 1 = humanYears
         if i is 1
