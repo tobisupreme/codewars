@@ -24,7 +24,17 @@ Pseudocode:
 */
 
 function accum(s) {
-	// your code
+  let str = s.split("");
+  let result = str
+    .map((element, index) => {
+      let count = index + 1;
+      element = element.toLowerCase().repeat(count);
+      element = element[0].toUpperCase() + element.slice(1);
+      return element;
+    })
+    .join("-");
+
+  return result;
 }
 
 // Test cases
