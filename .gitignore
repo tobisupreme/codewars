@@ -1,3 +1,5 @@
 /.vscode
 /snake_case.js
 /node_modules
+/package-lock.json
+/package.json
