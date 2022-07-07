@@ -24,25 +24,20 @@ Pseudocode:
 */
 
 function binToDec(bin) {
-    return bin
-        .toString()
-        .split("")
-        .map(Number)
-        .reverse()
-        .reduce((acc, element, index) => acc + element * 2 ** index, 0);
+  return bin
+    .toString()
+    .split("")
+    .map(Number)
+    .reverse()
+    .reduce((acc, element, index) => acc + element * 2 ** index, 0);
 }
 
 // Binary to decimal
 function binToDec2(bin) {
-    return parseInt(bin, 2); // parseInt(variable, base) does the exact same thing in one line. Phew!
+  return parseInt(bin, 2); // parseInt(variable, base) does the exact same thing in one line. Phew!
 }
 
 // Test cases
-console.log(binToDec("1000011")) // 67
-console.log(binToDec(1110011)) // 115
-console.log(binToDec(11101111111)) // 1919
-
-
-
-
-
+console.log(binToDec("1000011")); // 67
+console.log(binToDec(1110011)); // 115
+console.log(binToDec(11101111111)); // 1919
