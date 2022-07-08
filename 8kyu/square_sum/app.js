@@ -1,3 +1,20 @@
+/*
+PREP:
+Parameters:
+Function takes in an array
+
+Returns:
+This function returns a number
+
+Examples:
+See test cases below
+
+Pseudocode:
+// Function takes in an array
+// Loop through the array
+// Square current element, and add to sum
+*/
+
 function squareSum(numbers) {
 
 }
