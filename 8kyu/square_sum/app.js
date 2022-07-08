@@ -16,7 +16,12 @@ Pseudocode:
 */
 
 function squareSum(numbers) {
-
+  let sum = 0
+  if (numbers.length < 1) return sum
+  for (let i = 0; i < numbers.length; i++) {
+    sum += numbers[i] ** 2
+  }
+  return sum
 }
 
 // Test cases
