@@ -1,3 +1,21 @@
+/*
+PREP:
+Parameters:
+This function takes in a string
+
+Returns:
+This function returns a number
+
+Example:
+See readme.md for example
+
+Pseudocode:
+// Function takes in a string
+// Split string
+// Count the characters
+// Return the number of characters with a count greater than 1    
+*/
+
 function duplicateCount(text) {
   //...
 }
