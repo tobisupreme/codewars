@@ -17,7 +17,24 @@ Pseudocode:
 */
 
 function duplicateCount(text) {
-  //...
+  const splitText = text.split('')
+  const count = splitText.reduce((countObj, element) => {
+    if (!countObj[element.toLowerCase()]) {
+      countObj[element.toLowerCase()] = 0
+    }
+    countObj[element.toLowerCase()]++
+    return countObj
+  }, {})
+
+  let returnValue = 0
+  let countValues = Object.values(count)
+  for (let i = 0; i < countValues.length; i++) {
+    if (countValues[i] > 1) {
+      returnValue++
+    }
+  }
+    
+  return returnValue
 }
 
 // Test cases
