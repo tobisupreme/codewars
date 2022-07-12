@@ -16,11 +16,15 @@ Pseudocode:
 // return array
 */
 
-const reverseSeq = n => {
-  return [];
+const reverseSeq = (n) => {
+  const arr = [];
+  for (let i = n; i > 0; i--) {
+    arr.push(i);
+  }
+  return arr;
 };
 
 // Test case
-const test1 = reverseSeq(5) // [5, 4, 3, 2, 1]
+const test1 = reverseSeq(5); // [5, 4, 3, 2, 1]
 
 console.log(test1);
