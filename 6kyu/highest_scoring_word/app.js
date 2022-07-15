@@ -17,8 +17,21 @@ Pseudocode:
 // Return the word at the index with the highest number   
 */
 
-function high(x){
-
+function high(x) {
+  const alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+  const inputStrArray = x.split(' ')
+  const inputStrArrayVal = []
+  for (let i = 0; i < inputStrArray.length; i++) {
+    const val = inputStrArray[i]
+      .split('')
+      .map((x) => {
+        return alphabet.indexOf(x) + 1
+      })
+      .reduce((sum, x) => sum + x, 0)
+    inputStrArrayVal.push(val)
+  }
+  const max = Math.max.apply(null, inputStrArrayVal)
+  return inputStrArray[inputStrArrayVal.indexOf(max)]
 }
 
 // Test cases
