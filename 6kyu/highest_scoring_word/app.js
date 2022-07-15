@@ -1,3 +1,22 @@
+/*
+PREP:
+Parameters:
+This function takes in a string
+
+Returns:
+This function returns a string
+
+Example:
+See test cases for examples
+
+Pseudocode:
+// Function takes in a string
+// Create an array with the letters of the english alphabet
+// Split the string
+// For each word, map the characters to the index in the earlier created array and sum it's values
+// Return the word at the index with the highest number   
+*/
+
 function high(x){
 
 }
