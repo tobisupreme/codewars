@@ -1,3 +1,20 @@
+/* 
+PREP:
+Parameters:
+This function takes in an array
+
+Returns:
+This function returns a number
+
+Examples:
+See `readme.md`
+
+Pseudocode:
+// Function takes in an array
+// Filter array and remove non-positives
+// Return sum of array elements
+*/
+
 function positiveSum(arr) {}
 
 // Test cases
