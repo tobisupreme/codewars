@@ -15,7 +15,17 @@ Pseudocode:
 // Return sum of array elements
 */
 
-function positiveSum(arr) {}
+function positiveSum(arr) {
+  if (arr.length < 1) return 0;
+
+  const positiveArr = arr.filter((x) => x > 0);
+
+  if (positiveArr.length < 1) {
+    return 0;
+  } else {
+    return positiveArr.reduce((sum, num) => (sum += num), 0);
+  }
+}
 
 // Test cases
 const test1 = positiveSum([1, 2, 3, 4, 5]); // 15
