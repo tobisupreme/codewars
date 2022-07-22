@@ -1,3 +1,24 @@
+/* 
+PREP:
+Parameters:
+This function takes in a string
+
+Returns:
+This function returns a string
+
+Examples:
+See `readme.md`
+
+Pseudocode:
+// Function takes in a string
+// Split string on space into array of string
+// For each string in array
+  // reverse word
+// End for
+// Join array of words with space as delimiter
+// Return joined string
+*/
+
 function reverseWords(str) {
   // Go for it
 }
