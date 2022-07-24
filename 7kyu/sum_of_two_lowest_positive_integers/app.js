@@ -1,3 +1,20 @@
+/* 
+PREP:
+Parameters:
+This function takes in an array
+
+Returns:
+This function returns a number
+
+Examples:
+See `readme.md`
+
+Pseudocode:
+// Function takes in an array
+// Sort array in ascending order
+// Return sum of first two elements in sorted array
+*/
+
 function sumTwoSmallestNumbers(numbers) {
   //Code here
 }
