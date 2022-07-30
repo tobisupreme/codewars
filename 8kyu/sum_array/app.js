@@ -19,6 +19,10 @@ Pseudocode:
 // Sum Numbers
 function sum (numbers) {
     "use strict";
+
+    if (numbers.length < 1) return 0;
+
+    return numbers.reduce((sum, num) => sum + num, 0)
     
 };
 
