@@ -1,3 +1,21 @@
+/* 
+PREP:
+Parameters:
+This function takes in an array
+
+Returns:
+This function returns a number
+
+Examples:
+See `readme.md`
+
+Pseudocode:
+// Function takes in an array
+// IF length of array is 0, return 0
+// Loop through array and add all elements
+// Return sum
+*/
+
 // Sum Numbers
 function sum (numbers) {
     "use strict";
