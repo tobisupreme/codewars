@@ -29,12 +29,29 @@ ELSE
 */
 
 function likes(names) {
-  // TODO
+  let no = names.length;
+  if (no < 1) {
+    return `no one likes this`;
+  } else if (no < 2) {
+    return `${names[0]} likes this`;
+  } else if (no < 3) {
+    return `${names[0]} and ${names[1]} like this`;
+  } else if (no < 4) {
+    return `${names[0]}, ${names[1]} and ${names[2]} like this`;
+  } else {
+    return `${names[0]}, ${names[1]} and ${no - 2} others like this`;
+  }
 }
 
 // Test cases
-likes([]); // "no one likes this"
-likes(["Peter"]); // "Peter likes this"
-likes(["Jacob", "Alex"]); // "Jacob and Alex like this"
-likes(["Max", "John", "Mark"]); // "Max, John and Mark like this"
-likes(["Alex", "Jacob", "Mark", "Max"]); // "Alex, Jacob and 2 others like this"
+const test1 = likes([]); // "no one likes this"
+const test2 = likes(["Peter"]); // "Peter likes this"
+const test3 = likes(["Jacob", "Alex"]); // "Jacob and Alex like this"
+const test4 = likes(["Max", "John", "Mark"]); // "Max, John and Mark like this"
+const test5 = likes(["Alex", "Jacob", "Mark", "Max"]); // "Alex, Jacob and 2 others like this"
+
+console.log(test1);
+console.log(test2);
+console.log(test3);
+console.log(test4);
+console.log(test5);
