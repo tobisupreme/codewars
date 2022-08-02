@@ -19,9 +19,17 @@ Pseudocode:
 // Return the difference between the sum of all the first elements and the sum of all the second elements in the array
 */
 
-var number = function(busStops) {
-  // Good Luck!
-}
+var number = function (busStops) {
+  const numOfPeopleInBus = busStops.reduce((acc, x) => {
+    acc += x[0];
+    return acc;
+  }, 0);
+  const numOfPeopleGetOff = busStops.reduce((acc, x) => {
+    acc += x[1];
+    return acc;
+  }, 0);
+  return numOfPeopleInBus - numOfPeopleGetOff;
+};
 
 // Test cases
 const test1 = number([[10,0],[3,5],[5,8]]); // 5
