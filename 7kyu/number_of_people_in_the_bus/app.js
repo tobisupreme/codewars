@@ -21,14 +21,10 @@ Pseudocode:
 
 var number = function (busStops) {
   const numOfPeopleInBus = busStops.reduce((acc, x) => {
-    acc += x[0];
+    acc += x[0] - x[1];
     return acc;
   }, 0);
-  const numOfPeopleGetOff = busStops.reduce((acc, x) => {
-    acc += x[1];
-    return acc;
-  }, 0);
-  return numOfPeopleInBus - numOfPeopleGetOff;
+  return numOfPeopleInBus;
 };
 
 // Test cases
