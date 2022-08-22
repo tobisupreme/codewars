@@ -18,7 +18,30 @@ Pseudocode:
 */
 
 function deleteNth(arr, n) {
-    // ...
+    // count elements in array
+    let count = arr.reduce((obj, element) => {
+        if (!obj[element]) {
+            obj[element] = 0;
+        }
+        obj[element]++;
+        return obj;
+    }, {});
+
+    // add n to count
+    for (let element in count) {
+        count[element] = [count[element], n];
+    }
+
+    for (let i = 0; i < arr.length; i++) {
+        if (count[arr[i]][1] == 0) {
+            arr.splice(i, 1);
+            i -= 1;
+        }
+        count[arr[i]][0] -= 1;
+        count[arr[i]][1] -= 1;
+    }
+
+    return arr;
 }
 
 // Test cases
