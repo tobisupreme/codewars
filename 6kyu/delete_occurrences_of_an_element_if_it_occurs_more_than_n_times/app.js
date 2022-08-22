@@ -26,29 +26,34 @@ function deleteNth(arr, n) {
         obj[element]++;
         return obj;
     }, {});
+    console.log(count)
 
     // add n to count
     for (let element in count) {
         count[element] = [count[element], n];
     }
 
-    for (let i = 0; i < arr.length; i++) {
-        if (count[arr[i]][1] < 1) {
+    start: for (let i = 0; i < arr.length; i++) {
+        if (count[arr[i]][0] > count[arr[i]][1] && count[arr[i]][1] < 1) {
             arr.splice(i, 1);
             i -= 1;
+            continue start;
         }
         count[arr[i]][0] -= 1;
         count[arr[i]][1] -= 1;
     }
 
+    // console.table(count)
     return arr;
 }
 
 // Test cases
 const test1 = deleteNth([20, 37, 20, 21], 1); // [20,37,21]
 const test2 = deleteNth([1, 1, 3, 3, 7, 2, 2, 2, 2], 3); // [1, 1, 3, 3, 7, 2, 2, 2]
-const test3 = deleteNth([41, 9, 43, 41, 27, 27, 27, 43, 43, 41, 27, 43, 41, 27, 27, 41, 27, 27, 27], 2); // [1, 1, 3, 3, 7, 2, 2, 2]
+const test3 = deleteNth([41, 9, 43, 41, 27, 27, 27, 43, 43, 41, 27, 43, 41, 27, 27, 41, 27, 27, 27], 2); 
+const test4 = deleteNth([21, 21, 33, 5, 11, 10, 25, 10, 25, 33, 21, 21, 13, 21, 49, 10, 13, 10, 33, 33, 13, 11, 25, 10, 21, 13, 21, 13, 13, 25, 33, 13, 25, 13, 21, 10, 22, 4, 33, 4, 25, 10, 33, 11, 10, 25, 13, 10, 33, 4, 25, 11, 25, 21, 11], 5); 
 
 console.log(test1);
 console.log(test2);
 console.log(test3);
+console.log(test4);
