@@ -33,7 +33,7 @@ function deleteNth(arr, n) {
     }
 
     for (let i = 0; i < arr.length; i++) {
-        if (count[arr[i]][1] == 0) {
+        if (count[arr[i]][1] < 1) {
             arr.splice(i, 1);
             i -= 1;
         }
@@ -47,6 +47,8 @@ function deleteNth(arr, n) {
 // Test cases
 const test1 = deleteNth([20, 37, 20, 21], 1); // [20,37,21]
 const test2 = deleteNth([1, 1, 3, 3, 7, 2, 2, 2, 2], 3); // [1, 1, 3, 3, 7, 2, 2, 2]
+const test3 = deleteNth([41, 9, 43, 41, 27, 27, 27, 43, 43, 41, 27, 43, 41, 27, 27, 41, 27, 27, 27], 2); // [1, 1, 3, 3, 7, 2, 2, 2]
 
 console.log(test1);
 console.log(test2);
+console.log(test3);
