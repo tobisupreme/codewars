@@ -11,23 +11,11 @@ See readme.md for example
 
 Pseudocode:
 // Function takes in an array
-// Loop through the array
-// Return the first number that isn't equal to the previous    
+// Return the element whose index is the same from the start as it is from the end   
 */
 
 function findUniq(arr) {
-  const count = arr.reduce((obj, x) => {
-    if (!obj[x]) {
-      obj[x] = 1
-    } else {
-      obj[x]++
-    }
-    return obj
-  }, {})
-
-  for (const key in count) {
-    if (count[key] === 1) return Number(key)
-  }
+  return arr.find(n => arr.indexOf(n) === arr.lastIndexOf(n))
 }
 
 // Test cases
