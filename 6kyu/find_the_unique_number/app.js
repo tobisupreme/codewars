@@ -16,7 +16,18 @@ Pseudocode:
 */
 
 function findUniq(arr) {
-  // do magic
+  const count = arr.reduce((obj, x) => {
+    if (!obj[x]) {
+      obj[x] = 1
+    } else {
+      obj[x]++
+    }
+    return obj
+  }, {})
+
+  for (const key in count) {
+    if (count[key] === 1) return Number(key)
+  }
 }
 
 // Test cases
