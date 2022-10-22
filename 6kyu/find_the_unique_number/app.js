@@ -1,3 +1,20 @@
+/*
+PREP:
+Parameters:
+This function takes in an array
+
+Returns:
+This function returns a number
+
+Example:
+See readme.md for example
+
+Pseudocode:
+// Function takes in an array
+// Loop through the array
+// Return the first number that isn't equal to the previous    
+*/
+
 function findUniq(arr) {
   // do magic
 }
